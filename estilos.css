@@ -1,0 +1,462 @@
+/* Esto es un comentario en CSS*/
+/* Forma de armado*/
+/*selector {
+    propiedad: valor;
+}*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    font-family: 'Catamaran', sans-serif;
+}
+
+header {
+
+    padding: 30px;
+    background-image: linear-gradient(to right, pink, #FF6F91);
+}
+
+h1 {
+    color: #FF6F91;
+    font-weight: bold;
+    font-family: 'catamaran'sans-serif;
+    font-style: italic;
+    text-align: center;
+
+}
+
+h2 {
+    color: #FF6F91;
+    font-family: 'catamaran'sans-serif;
+    text-align: center;
+}
+
+h3 {
+    color: #FF6F91;
+    font-family: 'catamaran'sans-serif;
+    text-align: center;
+}
+
+p {
+    color: grey;
+    text-align: center;
+
+}
+
+
+main {
+    background-color: whitesmoke;
+    padding: 25px;
+
+}
+
+footer {
+    background-image: linear-gradient(to right, pink, #FF6F91);
+    text-align: center;
+    padding: 25px;
+}
+
+
+/*CLASES*/
+.img {
+    border-radius: 100px;
+    width: 420px;
+    height: 300px;
+}
+.imgProductos {
+    border-style: none;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    padding: 0px;
+}
+.imgCombos {
+    border-style: none;
+    border-radius: 100px;
+    width: 250px;
+    height: 250px;
+    padding: 0px;
+}
+.imgBox {
+    border-style: none;
+    border-radius: 100px;
+    width: 300px;
+    height: 300px;
+    padding: 0px;
+}
+.logoHeader {
+    width: 150px;
+    height: 150px;
+
+}
+
+.logoFooter {
+    border-style: none;
+    width: 15px;
+    height: 15px;
+}
+
+/*FLEXBOX*/
+
+.headerFlex {
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuFlex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 98vw;
+    padding-top: 25px;
+    font-size: 22px;
+}
+.etiquetaProducto {
+    display: inline-block;
+    width: 250px;
+    height: 450px;
+    background-color: pink;
+    margin: 25px;
+    padding: 25px;
+    border: double darkmagenta;
+}
+.etiquetaCombo {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 600px;
+    background-color: pink;
+    margin: 25px;
+    padding: 25px;
+    border: double darkmagenta;
+}
+.etiquetaBox {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 950px;
+    background-color: pink;
+    margin: 25px;
+    padding: 25px;
+    border: double darkmagenta;
+}
+.etiquetaContacto {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 950px;
+    background-color: pink;
+    margin: 25px;
+    padding: 25px;
+    border: double darkmagenta;
+}
+/*GRIDS*/
+
+
+
+.nosotrosContenedor {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+       'a a'
+       'b b'
+       'c d'
+       'e f'
+       'g g'
+       'h h';
+}
+.nosotrosUno {
+    grid-area: a;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.nosotrosDos {
+    grid-area: b;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: pink;
+}
+.nosotrosTres {
+    grid-area: c;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.nosotrosCuatro {
+    grid-area: d;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: pink;
+}
+.nosotrosCinco {
+    grid-area: e;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.nosotrosSeis {
+    grid-area: f;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: pink;
+}
+.nosotrosSiete {
+    grid-area: g;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.nosotrosOcho {
+    grid-area: h;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: pink;
+}
+
+.productosContenedor {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+       'a'
+       'b';
+}
+.productosUno {
+    grid-area: a;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.productosDos {
+    grid-area: b;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.comboContenedor {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+       'a'
+       'b';
+}
+.comboUno {
+    grid-area: a;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.comboDos {
+    grid-area: b;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.boxContenedor {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+       'a'
+       'b';
+}
+.boxUno {
+    grid-area: a;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.boxDos {
+    grid-area: b;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contactoContenedor {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto 40% auto;
+    grid-template-areas:
+       'b a c'
+       'b d c';
+}
+.contactoUno {
+    grid-area: a;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contactoDos {
+    grid-area: b;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 700px;
+    background-color: pink;
+    margin: 25px;
+    padding: 25px;
+    border: double darkmagenta;
+}
+.contactoTres {
+    grid-area: c;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 700px;
+    background-color: pink;
+    margin: 25px;
+    padding: 25px;
+    border: double darkmagenta;
+}
+.contactoCuatro {
+    grid-area: d;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*CLASES*/
+
+/*RESPONSIVE*/
+/*TABLET*/
+@media (min-width: 1024px) {
+    .indexContenedor {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'a a'
+            'b b'
+            'c c'
+            'd e'
+            'f g'
+            'h i';
+    }
+    .indexUno {
+        grid-area: a;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+    
+    
+    }
+    .indexDos {
+        grid-area: b;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        background-color: pink;
+    }
+    .indexTres {
+        grid-area: c;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+    
+    
+    }
+    .indexCuatro {
+        grid-area: d;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    
+    }
+    .indexCinco {
+        grid-area: e;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        background-color: pink;
+    
+    }
+    .indexSeis {
+        grid-area: f;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    
+    }
+    .indexSiete {
+        grid-area: g;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        background-color: pink;
+    
+    }
+    .indexOcho {
+        grid-area: h;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .indexNueve {
+        grid-area: i;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        background-color: pink;
+    }
+}
+@media (min-width: 481px) and (max-width: 1023px) {
+   .indexContenedor{
+       grid-template-areas: 
+       'a'
+       'b'
+       'c'
+       'd'
+       'e'
+       'f'
+       'g'
+       'h'
+       'i';
+   }
+}
+/*MOBILE*/
+@media (max-width: 480px) {
+    
+     }
