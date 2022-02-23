@@ -50,11 +50,13 @@ p {
 
 
 main {
-    background-color: whitesmoke;
+    background-image: linear-gradient(to whitesmoke, grey);
     padding: 25px;
 
 }
-
+nav { 
+    background-image: linear-gradient(to red, green);
+}
 footer {
     background-image: linear-gradient(to right, pink, #FF6F91);
     text-align: center;
@@ -67,6 +69,15 @@ footer {
     border-radius: 100px;
     width: 420px;
     height: 300px;
+    transform: rotate(15deg);
+    
+}
+.transicion {
+    transition: 3s;
+
+}
+.transicion:hover {
+width: 600px;
 }
 .imgProductos {
     border-style: none;
